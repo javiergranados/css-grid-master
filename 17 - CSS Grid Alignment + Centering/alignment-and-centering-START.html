@@ -24,7 +24,7 @@
     <div class="itm itm12">12</div>
     <div class="itm itm13">13</div>
     <div class="itm itm14">14</div>
-    <div class="itm itm15">15</div>
+    <div class="itm itm15">This is a test</div>
     <div class="itm itm16">16</div>
     <div class="itm itm17">17</div>
     <div class="itm itm18">18</div>
@@ -70,7 +70,16 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      grid-template-columns: repeat(10, 100px);
+      grid-template-rows: repeat(5, 100px);
+      /* justify-items: center;
+      align-items: center; */
+      place-items: center center;
+      justify-content: start;
+    }
+
+    .itm{
+      background: mistyrose;
     }
   </style>
 </body>
