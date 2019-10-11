@@ -21,6 +21,35 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: repeat(10, 1fr);
+    }
+    .logo {
+      grid-column: span 2;
+      order: 1;
+    }
+    .nav{
+      grid-column: span 8;
+      order: 2;
+    }
+    .content{
+      grid-column: 1 / -1;
+      order: 3;
+    }
+
+    @media(max-width: 700px){
+     .logo,
+     .nav {
+       grid-column: 1 / -1;
+     }
+     .logo{
+       order: 3;
+     }
+     .nav{
+       order: 1;
+     }
+     .content{
+       order: 2;
+     }
     }
   </style>
 </body>
