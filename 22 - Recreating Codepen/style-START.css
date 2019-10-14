@@ -27,4 +27,87 @@ h6 {
   margin: 0;
   font-size: 1.5em;
 }
-
+.codepen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr auto auto;
+  height: 100vh;
+}
+.codepen > * {
+  border: 1px solid 595959;
+}
+.pen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  align-items: center;
+  background: black;
+  color: white;
+}
+.pen .pen__details {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+.pen .button {
+  background: #595959;
+  border: 0;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.pen .button--dirty {
+  border-top: 2px solid yellow;
+}
+.code {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.code .editor {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-content: flex-start;
+  background: #1b2b34;
+  color: white;
+}
+.code .editor__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.code .editor__header .button {
+  background: #595959;
+  color: white;
+}
+.code .editor__code {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.code .editor__gutter {
+  display: grid;
+  grid-template-columns: auto;
+}
+.code .editor__input {
+  background: none;
+  border: 0;
+  color: grey;
+  font-size: 16px;
+  line-height: 19px;
+}
+.preview {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+.settings {
+  background: black;
+}
+.settings .button {
+  background: #595959;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+}
